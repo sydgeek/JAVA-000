@@ -17,9 +17,8 @@ build/
 .classpatch
 
 #Intellij idea
-.idea
 .idea/
-/idea/
+*/idea/
 *.ipr
 *.iml
 *.iws
@@ -35,4 +34,4 @@ build/
 .DS_Store
 Thumbs.db
 
-out/
+*/out/
