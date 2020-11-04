@@ -1,4 +1,4 @@
-package io.github.kimmking.gateway;
+package main.java.io.github.kimmking.gateway;
 
 
 import io.github.kimmking.gateway.inbound.HttpInboundServer;
