@@ -1,6 +1,4 @@
-package lesson07.question02;
-
-import java.util.concurrent.Semaphore;
+package src.com.geekbang;
 
 /**
  * 本周作业：（必做）思考有多少种方式，在main函数启动一个新线程或线程池，
@@ -53,8 +51,9 @@ public class HomeworkMethod06 {
     }
 
     private static int fibo(int a) {
-        if (a < 2)
+        if (a < 2) {
             return 1;
+        }
         return fibo(a - 1) + fibo(a - 2);
     }
 

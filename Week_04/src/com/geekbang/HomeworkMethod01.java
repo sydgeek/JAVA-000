@@ -1,7 +1,6 @@
-package lesson07.question02;
+package src.com.geekbang;
 
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 本周作业：（必做）思考有多少种方式，在main函数启动一个新线程或线程池，
@@ -56,8 +55,9 @@ public class HomeworkMethod01 {
     }
 
     private static int fibo(int a) {
-        if (a < 2)
+        if (a < 2) {
             return 1;
+        }
         return fibo(a - 1) + fibo(a - 2);
     }
 

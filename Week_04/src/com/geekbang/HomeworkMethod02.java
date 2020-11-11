@@ -1,6 +1,5 @@
-package lesson07.question02;
+package src.com.geekbang;
 
-import java.util.Random;
 import java.util.concurrent.*;
 
 /**
@@ -15,6 +14,7 @@ public class HomeworkMethod02 {
         ExecutorService executor = Executors.newCachedThreadPool();
         long start = System.currentTimeMillis();
         Future<Integer> result = executor.submit(new Callable<Integer>() {
+            @Override
             public Integer call() throws Exception {
                 return  sum();
             }
@@ -35,8 +35,9 @@ public class HomeworkMethod02 {
     }
 
     private static int fibo(int a) {
-        if (a < 2)
+        if (a < 2) {
             return 1;
+        }
         return fibo(a - 1) + fibo(a - 2);
     }
 }

@@ -1,7 +1,6 @@
-package lesson07.question02;
+package src.com.geekbang;
 
 import java.util.concurrent.BrokenBarrierException;
-import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 
 /**
@@ -52,8 +51,9 @@ public class HomeworkMethod03 {
     }
 
     private static int fibo(int a) {
-        if (a < 2)
+        if (a < 2) {
             return 1;
+        }
         return fibo(a - 1) + fibo(a - 2);
     }
 
